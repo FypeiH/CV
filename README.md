@@ -4,7 +4,7 @@ This is a simple project developed with Angular to present my resume in an inter
 
 ## 🔧 Technologies Used
 
-- [Angular](https://angular.io/) 18
+- [Angular 18](https://angular.io/)
 - TypeScript
 - HTML / CSS
 - TailwindCSS
@@ -38,6 +38,7 @@ src/
 │   ├── models/         # Interfaces and data models
 │   └── app.module.ts
 ├── assets/             # Images, icons, etc.
+├── locales/            # Translations json files
 ├── index.html
 └── styles.css
 ```
