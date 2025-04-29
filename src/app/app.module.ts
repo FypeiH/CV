@@ -6,6 +6,12 @@ import { AppComponent } from './components/app-component/app.component';
 import { PersonalInfoComponent } from './components/personal-info/personal-info.component';
 import { ProfessionalInfoComponent } from './components/professional-info/professional-info.component';
 
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -14,9 +20,19 @@ import { ProfessionalInfoComponent } from './components/professional-info/profes
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: (http: HttpClient) => new TranslateHttpLoader(http, './locales/', '.json'),
+        deps: [HttpClient]
+      }
+    }),
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [
+    provideHttpClient(withInterceptorsFromDi()),
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

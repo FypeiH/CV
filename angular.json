@@ -4,14 +4,6 @@
   "newProjectRoot": "projects",
   "projects": {
     "CV": {
-      "i18n": {
-        "sourceLocale": "pt-PT",
-        "locales": {
-          "en-US": {
-            "translation": "src/locale/messages.en-US.xlf"
-          }
-        }
-      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -24,6 +16,12 @@
           "standalone": false
         }
       },
+      "i18n": {
+        "sourceLocale": "pt-PT",
+        "locales": {
+          "en-US": "src/locales/en-US.json"
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -31,9 +29,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "localize": [
-              "en-US"
-            ],
             "outputPath": "dist/cv",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -46,6 +41,11 @@
               {
                 "glob": "**/*",
                 "input": "src/assets"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/locales",
+                "output": "locales"
               }
             ],
             "styles": [
