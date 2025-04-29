@@ -1,27 +1,65 @@
-# CV
+# 📄 My Resume in Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.3.
+This is a simple project developed with Angular to present my resume in an interactive and modern way on the web.
 
-## Development server
+## 🔧 Technologies Used
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Angular](https://angular.io/) 18
+- TypeScript
+- HTML / CSS
+- TailwindCSS
 
-## Code scaffolding
+## 🚀 How to Run Locally
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/my-resume-angular.git
+   cd my-resume-angular
+   ```
 
-## Build
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3. **Start the development server:**
+   ```bash
+   ng serve
+   ```
 
-## Running unit tests
+4. Open in your browser:  
+   [http://localhost:4200](http://localhost:4200)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## 📁 Project Structure
+```
+src/
+├── app/
+│   ├── components/     # Components such as "About Me", "Experience", "Education", etc.
+│   ├── models/         # Interfaces and data models
+│   └── app.module.ts
+├── assets/             # Images, icons, etc.
+├── index.html
+└── styles.css
+```
 
-## Running end-to-end tests
+## 🧠 Features
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Presentation of personal information (name, contact, etc.)
+- Professional experience
+- Academic background
+- Skills and technologies
+- Responsive design
 
-## Further help
+## 📦 Production Build
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+To generate the production build:
+
+```bash
+ng build
+```
+
+The output will be generated in the `dist/` folder.
+
+## 📃 License
+
+This project is open source and available under the [MIT License](LICENSE).

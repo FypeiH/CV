@@ -2,11 +2,15 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+import { AppComponent } from './components/app-component/app.component';
+import { PersonalInfoComponent } from './components/personal-info/personal-info.component';
+import { ProfessionalInfoComponent } from './components/professional-info/professional-info.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PersonalInfoComponent,
+    ProfessionalInfoComponent
   ],
   imports: [
     BrowserModule,

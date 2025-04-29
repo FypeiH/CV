@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.paper {
+  width: 595px;
+  height: 842px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
