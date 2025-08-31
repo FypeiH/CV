@@ -1,10 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+.mat-icon {
+  width: auto !important;
+  height: auto !important;
+}
 
 .paper {
   width: 595px;
   height: 842px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  font-family: "Bebas Neue", sans-serif;
 }

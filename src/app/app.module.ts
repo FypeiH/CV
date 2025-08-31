@@ -11,6 +11,8 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { HttpClient } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -28,10 +30,12 @@ import { ReactiveFormsModule } from '@angular/forms';
         deps: [HttpClient]
       }
     }),
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatIconModule
   ],
   providers: [
     provideHttpClient(withInterceptorsFromDi()),
+    provideAnimationsAsync(),
   ],
   bootstrap: [AppComponent]
 })
