@@ -11,22 +11,31 @@
     "reading": "Reading",
     "workExperience": "Work Experience",
     "developer": "Developer",
-    "altyraDetails1": "Developed multiple web and mobile applications.",
-    "altyraDetails2": "Developed REST APIs.",
-    "altyraDetails3": "Developed a data collection automation tool.",
+    "altyraDetails": [
+        "Developed multiple web and mobile applications.",
+        "Developed REST APIs.",
+        "Developed a data collection automation tool."
+    ],
     "lisbon": "Lisbon",
     "altyraDates": "Mar 2024 - Feb 2025",
     "ocrDates": "Mar 2021 - Jul 2021",
-    "ocrDetails1": "Customized and improved PHC Web ERP",
-    "ocrDetails2": "Improved a logistics application in Kalipso Studio",
+    "ocrDetails": [
+        "Customized and improved PHC Web ERP",
+        "Improved a logistics application in Kalipso Studio"
+    ],
     "education": "Education",
     "istecDates": "Sep 2022 - Aug 2024",
     "ddm": "Higher Technical Degree in Mobile App Development",
-    "istecDetails": "Java, React Native, and application design concepts.",
+    "istecDetails": [
+        "Java, React Native, and application design concepts."
+    ],
     "esgcDates": "Sep 2018 - Jul 2021",
     "esgcCourse": "IT Systems Management & Programming",
-    "esgcDetails1": "Received a Merit Award",
-    "esgcDetails2": "Final project awarded full marks",
+    
+    "esgcDetails": [
+        "Received a Merit Award",
+        "Final project awarded full marks"
+    ],
     "skills": "Skills",
     "languages": "Languages",
     "portuguese": "Portuguese",

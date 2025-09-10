@@ -32,55 +32,8 @@
    <p class="title">{{"workExperience" | translate}}</p> 
    <hr class="border-[#3B3B3B]" />
    <ul class="pt-6">
-    <li class="relative grid grid-cols-12 gap-3">
-    <div class="col-span-4">
-        <p class="font-bold text-xs uppercase">Altyra Solutions</p>
-        <p class="text-xs text-[#525252]">{{"lisbon" | translate}}</p>
-        <p class="text-xs text-[#525252]">{{"altyraDates" | translate}}</p>
-    </div>
-
-    <div class="relative flex justify-center col-span-1">
-        <div class="absolute top-0 h-full w-[1px] bg-[#3B3B3B] left-1/2 -translate-x-1/2"></div>
-
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-        class="bi bi-circle-fill fill-[#3B3B3B] z-10" viewBox="0 0 16 16">
-        <circle cx="8" cy="8" r="8" />
-        </svg>
-    </div>
-
-    <div class="col-span-7 mb-5">
-        <p class="font-bold text-xs">{{"developer" | translate}}</p>
-        <ul class="text-xs list-disc list-inside text-[#525252]">
-        <li>{{"altyraDetails1" | translate}}</li>
-        <li>{{"altyraDetails2" | translate}}</li>
-        <li>{{"altyraDetails3" | translate}}</li>
-        </ul>
-    </div>
-    </li>
-    <li class="relative grid grid-cols-12 gap-3">
-    <div class="col-span-4">
-        <p class="font-bold text-xs uppercase">OCR - Techology and Productivity</p>
-        <p class="text-xs text-[#525252]">{{"lisbon" | translate}}</p>
-        <p class="text-xs text-[#525252]">{{"ocrDates" | translate}}</p>
-    </div>
-
-    <div class="relative flex justify-center col-span-1">
-        <div class="absolute top-0 h-full w-[1px] bg-[#3B3B3B] left-1/2 -translate-x-1/2"></div>
-
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-        class="bi bi-circle-fill fill-[#3B3B3B] z-10" viewBox="0 0 16 16">
-        <circle cx="8" cy="8" r="8" />
-        </svg>
-    </div>
-
-    <div class="col-span-7 mb-5">
-        <p class="font-bold text-xs">{{"developer" | translate}}</p>
-        <ul class="text-xs list-disc list-inside text-[#525252]">
-        <li>{{"ocrDetails1" | translate}}</li>
-        <li>{{"ocrDetails2" | translate}}</li>
-        </ul>
-    </div>
-    </li>
+    <app-experience-item firmName="Altyra Solutions" location="lisbon" dates="altyraDates" role="developer" details="altyraDetails"></app-experience-item>
+    <app-experience-item firmName="OCR - Techology and Productivity" location="lisbon" dates="ocrDates" role="developer" details="ocrDetails"></app-experience-item>
    </ul>
 </div>
 
@@ -88,94 +41,19 @@
    <p class="title">{{"education" | translate}}</p> 
    <hr class="border-[#3B3B3B]" />
    <ul class="pt-6">
-    <li class="relative grid grid-cols-12 gap-3">
-    <div class="col-span-4">
-        <p class="font-bold text-xs uppercase">ISTEC</p>
-        <p class="text-xs text-[#525252]">{{"lisbon" | translate}}</p>
-        <p class="text-xs text-[#525252]">{{"istecDates" | translate}}</p>
-    </div>
-
-    <div class="relative flex justify-center col-span-1">
-        <div class="absolute top-0 h-full w-[1px] bg-[#3B3B3B] left-1/2 -translate-x-1/2"></div>
-
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-        class="bi bi-circle-fill fill-[#3B3B3B] z-10" viewBox="0 0 16 16">
-        <circle cx="8" cy="8" r="8" />
-        </svg>
-    </div>
-
-    <div class="col-span-7 mb-5">
-        <p class="font-bold text-xs">{{"ddm" | translate}}</p>
-        <ul class="text-xs list-disc list-inside text-[#525252]">
-        <li>{{"istecDetails" | translate}}</li>
-        </ul>
-    </div>
-    </li>
-    <li class="relative grid grid-cols-12 gap-3">
-    <div class="col-span-4">
-        <p class="font-bold text-xs uppercase">ESGC</p>
-        <p class="text-xs text-[#525252]">{{"lisbon" | translate}}</p>
-        <p class="text-xs text-[#525252]">{{"esgcDates" | translate}}</p>
-    </div>
-
-    <div class="relative flex justify-center col-span-1">
-        <div class="absolute top-0 h-full w-[1px] bg-[#3B3B3B] left-1/2 -translate-x-1/2"></div>
-
-        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
-        class="bi bi-circle-fill fill-[#3B3B3B] z-10" viewBox="0 0 16 16">
-        <circle cx="8" cy="8" r="8" />
-        </svg>
-    </div>
-
-    <div class="col-span-7 mb-5">
-        <p class="font-bold text-xs">{{"esgcCourse" | translate}}</p>
-        <ul class="text-xs list-disc list-inside text-[#525252]">
-            <li>{{"esgcDetails1" | translate}}</li>
-            <li>{{"esgcDetails2" | translate}}</li>
-        </ul>
-    </div>
-    </li>
+    <app-experience-item firmName="ISTEC" location="lisbon" dates="istecDates" role="ddm" details="istecDetails"></app-experience-item>
+    <app-experience-item firmName="ESGC" location="lisbon" dates="esgcDates" role="esgcCourse" details="esgcDetails"></app-experience-item>
    </ul>
 </div>
 <div class="pt-4">
    <p class="title">{{"skills" | translate}}</p> 
    <hr class="border-[#3B3B3B]" />
    <div class="grid grid-cols-3 pt-4 gap-3">
-    <div>
-        <p class="text-xs">Angular</p>
-        <div class="w-[100px] h-1 rounded-full bg-[#ADADAD]">
-            <div class="bg-[#3B3B3B] h-full rounded-full w-full"></div>
-        </div>
-    </div>
-    <div>
-        <p class="text-xs">React</p>
-        <div class="w-[100px] h-1 rounded-full bg-[#ADADAD]">
-            <div class="bg-[#3B3B3B] h-full rounded-full w-[80%]"></div>
-        </div>
-    </div>
-    <div>
-        <p class="text-xs">Typescript</p>
-        <div class="w-[100px] h-1 rounded-full bg-[#ADADAD]">
-            <div class="bg-[#3B3B3B] h-full rounded-full w-full"></div>
-        </div>
-    </div>
-    <div>
-        <p class="text-xs">HTML5/CSS3</p>
-        <div class="w-[100px] h-1 rounded-full bg-[#ADADAD]">
-            <div class="bg-[#3B3B3B] h-full rounded-full w-full"></div>
-        </div>
-    </div>
-    <div>
-        <p class="text-xs">Python</p>
-        <div class="w-[100px] h-1 rounded-full bg-[#ADADAD]">
-            <div class="bg-[#3B3B3B] h-full rounded-full w-[80%]"></div>
-        </div>
-    </div>
-    <div>
-        <p class="text-xs">SQL</p>
-        <div class="w-[100px] h-1 rounded-full bg-[#ADADAD]">
-            <div class="bg-[#3B3B3B] h-full rounded-full w-full"></div>
-        </div>
-    </div>
+    <app-skill-item skillName="Angular" level="100"></app-skill-item>
+    <app-skill-item skillName="React" level="80"></app-skill-item>
+    <app-skill-item skillName="Typescript" level="100"></app-skill-item>
+    <app-skill-item skillName="HTML5/CSS3" level="100"></app-skill-item>
+    <app-skill-item skillName="Python" level="80"></app-skill-item>
+    <app-skill-item skillName="SQL" level="100"></app-skill-item>
    </div>
 </div>
