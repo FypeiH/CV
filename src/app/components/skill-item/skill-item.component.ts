@@ -1,25 +1,27 @@
-import { AfterViewInit, Component, Input } from '@angular/core';
+import { Component, Input, OnChanges, SimpleChanges } from '@angular/core';
 
 @Component({
   selector: 'app-skill-item',
   templateUrl: './skill-item.component.html',
-  styleUrl: './skill-item.component.css'
+  styleUrls: ['./skill-item.component.css']
 })
-export class SkillItemComponent implements AfterViewInit {
+export class SkillItemComponent implements OnChanges {
   
-  @Input() skillName: string = ''
-  @Input() personal: Boolean = false
-  @Input() level: string = ''
+  @Input() skillName: string = '';
+  @Input() personal: boolean = false;
+  @Input() level: string = '';
 
-  itemPadding: string = ''
-  unfilledColor: string = ''
-  filledColor: string = ''
-  levelClass: string = ''
+  itemPadding = '';
+  unfilledColor = '';
+  filledColor = '';
+  levelPercent = '0%';
 
-  ngAfterViewInit(): void {
-    this.itemPadding = this.personal ? 'pt-4' : ''
-    this.unfilledColor = this.personal ? 'bg-[#696969]' : 'bg-[#ADADAD]'
-    this.filledColor = this.personal ? 'bg-[#F2F2F2]' : 'bg-[#3B3B3B]'
-    this.levelClass = 'w-[' + this.level + '%]'
+  ngOnChanges(changes: SimpleChanges): void {
+    this.itemPadding = this.personal ? 'pt-4' : '';
+    this.unfilledColor = this.personal ? 'bg-[#696969]' : 'bg-[#ADADAD]';
+    this.filledColor = this.personal ? 'bg-[#F2F2F2]' : 'bg-[#3B3B3B]';
+    
+    const lvl = Number(this.level) || 0;
+    this.levelPercent = Math.max(0, Math.min(100, lvl)) + '%';
   }
 }
