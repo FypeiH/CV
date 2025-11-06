@@ -3,6 +3,14 @@
 @tailwind components;
 @tailwind utilities;
 
+
+@media print {
+  html, body {
+    height: 100%;
+    overflow: visible;
+  }
+}
+
 html {
   font-family: "Roboto", sans-serif;
 }
@@ -13,11 +21,15 @@ html {
 }
 
 .paper {
-  width: 595px;
-  height: 842px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  width: 210mm;
+  height: 297mm;
+  overflow: hidden;
 }
 
 .title {
   font-family: "Bebas Neue", sans-serif;
+}
+
+p {
+  margin: 0;
 }

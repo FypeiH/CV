@@ -1,24 +1,29 @@
-<div class="grid grid-cols-3 grid items-center place-items-center">
-  <label class="flex items-center justify-center gap-3 mb-6">
+<div class="flex flex-col items-center gap-4">
+  <!-- Language Switch -->
+  <label class="flex items-center justify-center gap-3 mt-4">
     <span class="fi fi-pt" [ngClass]="{'invisible' : languageControl.value}"></span>
     <label class="relative inline-flex items-center cursor-pointer">
       <input type="checkbox" value="" [formControl]="languageControl" class="sr-only peer" 
         (change)="onLanguageChange()" />
-      <div class="w-9 h-5 bg-[#DA291C] hover:bg-red-700 peer-focus:outline-0 peer-focus:ring-transparent rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#0A3161] hover:peer-checked:bg-[#071F3D]"></div>
+      <div class="w-9 h-5 bg-[#DA291C] hover:bg-red-700 rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#0A3161] hover:peer-checked:bg-[#071F3D]"></div>
     </label>
     <span class="fi fi-us" [ngClass]="{'invisible' : !languageControl.value}"></span>
   </label>
 
-  <div class="paper bg-white" #cvContainer>
+  <!-- CV -->
+  <div class="paper bg-white shadow-lg border border-gray-200" #cvContainer>
     <div class="grid grid-cols-12 h-full">
-      <div class="bg-[#3B3B3B] col-span-4 pl-4 py-6 text-[#F2F2F2]">
+      <div class="bg-[#3B3B3B] col-span-4 p-4 text-[#F2F2F2]">
         <app-personal-info></app-personal-info>
       </div>
-      <div class="bg-[#F2F2F2] col-span-8 px-4 py-10 text-[#3B3B3B]">
+      <div class="bg-[#F2F2F2] col-span-8 p-6 text-[#3B3B3B]">
         <app-professional-info></app-professional-info>
       </div>
     </div>
   </div>
 
-  <button class="p-4 bg-[#3B3B3B] hover:bg-[#696969] text-[#F2F2F2] rounded mt-6 size-fit" (click)="downloadPDF()">Baixar CV</button>
+  <!-- Download Button -->
+  <button class="px-5 py-2 bg-[#3B3B3B] hover:bg-[#696969] text-[#F2F2F2] rounded mb-6" (click)="downloadPDF()">
+    Download CV
+  </button>
 </div>
