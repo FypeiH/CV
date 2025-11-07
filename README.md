@@ -51,3 +51,33 @@ npm install
 
 # Start development server
 ng serve
+```
+---
+
+## 📄 PDF Export
+
+To download the CV as a PDF, click the “**Download CV**” button on the interface.
+The project uses `html-to-image` for accurate rendering and `jsPDF` for precise A4 scaling.
+
+---
+
+## 💡 About
+
+I’m **Filipe Bravo**, a **Junior Fullstack Developer** passionate about building clean, scalable web applications.
+Currently completing my **BSc in Computer Engineering at ISTEC Lisboa**, and actively developing web solutions using Angular, TypeScript, and Python.
+
+---
+
+## 🔗 Links
+
+[LinkedIn](https://www.linkedin.com/in/filipe-bravo)
+
+[GitHub](https://github.com/FypeiH)
+
+[Portfolio Website (soon)](#)
+
+---
+
+## 📜 License
+
+This project is open-source and available under the **MIT License**.
