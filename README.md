@@ -1,66 +1,53 @@
-# 📄 My Resume in Angular
+# Filipe Bravo – Personal CV (Built with Angular)
 
-This is a simple project developed with Angular to present my resume in an interactive and modern way on the web.
+This project is my **personal curriculum vitae**, fully developed from scratch using **Angular** and **TailwindCSS**.  
+The goal was to create a **clean, dynamic, and responsive** CV layout that could be easily updated, localized, and exported as a PDF.
 
-## 🔧 Technologies Used
+---
 
-- [Angular 18](https://angular.io/)
-- TypeScript
-- HTML / CSS
-- TailwindCSS
+## 🧠 Overview
 
-## 🚀 How to Run Locally
+- Built entirely in **Angular 17** with a **component-based architecture**.
+- Designed using **TailwindCSS** for precise control over layout and responsiveness.
+- Includes **i18n support** (🇵🇹 Portuguese / 🇺🇸 English) via Angular pipes and translations.
+- PDF generation handled with **jsPDF** and **html-to-image**.
+- Modular structure allows reuse of components such as:
+  - `<app-experience-item>`
+  - `<app-skill-item>`
+  - `<app-personal-info>`
+  - `<app-professional-info>`
 
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/your-username/my-resume-angular.git
-   cd my-resume-angular
-   ```
+---
 
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+## 🧩 Features
 
-3. **Start the development server:**
-   ```bash
-   ng serve
-   ```
+- **Responsive Design** – Optimized for A4 size and web viewing.
+- **Dynamic Content** – All data managed via JSON and translation files.
+- **Dark/Light Layout** – Visual hierarchy between sidebar and main content.
+- **Single-page Export** – Generates a polished, print-ready CV in PDF format.
+- **Bilingual Support** – Switch language instantly between Portuguese and English.
 
-4. Open in your browser:  
-   [http://localhost:4200](http://localhost:4200)
+---
 
-## 📁 Project Structure
-```
-src/
-├── app/
-│   ├── components/     # Components such as "About Me", "Experience", "Education", etc.
-│   ├── models/         # Interfaces and data models
-│   └── app.module.ts
-├── assets/             # Images, icons, etc.
-├── locales/            # Translations json files
-├── index.html
-└── styles.css
-```
+## ⚙️ Tech Stack
 
-## 🧠 Features
+- **Frontend:** Angular 17  
+- **Styling:** TailwindCSS  
+- **PDF Export:** jsPDF + html-to-image  
+- **Icons:** Angular Material  
+- **Language Support:** ngx-translate
 
-- Presentation of personal information (name, contact, etc.)
-- Professional experience
-- Academic background
-- Skills and technologies
-- Responsive design
+---
 
-## 📦 Production Build
-
-To generate the production build:
+## 🚀 Running the Project
 
 ```bash
-ng build
-```
+# Clone this repository
+git clone https://github.com/fypeih/CV.git
+cd CV
 
-The output will be generated in the `dist/` folder.
+# Install dependencies
+npm install
 
-## 📃 License
-
-This project is open source and available under the [MIT License](LICENSE).
+# Start development server
+ng serve
