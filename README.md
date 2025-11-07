@@ -31,7 +31,7 @@ The goal was to create a **clean, dynamic, and responsive** CV layout that could
 
 ## ⚙️ Tech Stack
 
-- **Frontend:** Angular 17  
+- **Frontend:** Angular 18  
 - **Styling:** TailwindCSS  
 - **PDF Export:** jsPDF + html-to-image  
 - **Icons:** Angular Material  
