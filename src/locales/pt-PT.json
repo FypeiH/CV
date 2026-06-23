@@ -1,7 +1,7 @@
 {
     "professional-info": "professional-info funciona!",
     "aboutme" : "Sobre mim",
-    "aboutme-info": "Apaixonado por tecnologia e programação, encontro realização ao criar soluções de software. Gosto de trabalhar em equipa, enfrentar desafios como oportunidades de crescimento e manter sempre uma postura honesta e realista.",
+    "aboutme-info": "Licenciado em Engenharia Informática com conclusão prevista para Agosto de 2026, com experiência prática na construção de aplicações web, APIs REST, ferramentas internas e produtos digitais voltados para o cliente. Confortável tanto no desenvolvimento frontend quanto backend com React, TypeScript, Node.js, Python, PHP e SQL. Procuro um cargo de engenharia focado em produtos com forte mentoria, crescimento técnico e progressão a longo prazo.",
     "references": "Referências",
     "hobbies": "Passatempos",
     "coding": "Programação",
@@ -12,21 +12,23 @@
     "workExperience": "Experiência de Trabalho",
     "developer": "Programador",
     "altyraDetails": [
-        "Desenvolvi múltiplas aplicações web e móveis.",
-        "Desenvolvi REST APIs.",
-        "Desenvolvi uma ferramenta de automação de recolha de dados."
+        "Construí e mantive aplicações web e móveis em projetos de clientes.",
+        "Desenvolvi APIs REST para suportar fluxos de trabalho e troca de dados das aplicações.",
+        "Criei uma ferramenta de automação para agilizar os processos de recolha de dados."
     ],
     "lisbon": "Lisboa",
     "altyraDates": "Mar 2024 - Fev 2025",
     "ocrDates": "Mar 2021 - Jul 2021",
     "ocrDetails": [
-        "Customizei e melhorei o ERP PHC Web",
-        "Melhorei uma aplicação de logística em Kalipso Studio"
+        "Personalizei fluxos de trabalho e funcionalidades do ERP na plataforma PHC Web.",
+        "Melhorei a funcionalidade numa aplicação logística usando o Kalipso Studio.",
+        "Trabalhei na correção de bugs, atualizações de funcionalidades e tarefas de suporte de aplicações."
     ],
     "giganticDates": "Mar 2026 - Jun 2026",
     "giganticDetails": [
-        "Desenvolvi websites em WordPress e Elementor.",
-        "Colaboração em projetos web para clientes de referência, incluindo Sumol Compal, Sotheby's, Malo Clinic, etc."
+        "Entreguei websites voltados para o cliente para marcas de diferentes indústrias.",
+        "Construí e personalizei páginas e componentes WordPress usando Elementor.",
+        "Contribuí para a implementação de websites responsivos e atualizações de UI orientadas por conteúdo."
     ],
     "education": "Formação Académica",
     "licDates": "Oct 2024 - Presente",

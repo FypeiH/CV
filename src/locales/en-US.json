@@ -1,7 +1,7 @@
 {
     "professional-info": "professional-info works!",
     "aboutme": "About me",
-    "aboutme-info": "Passionate about technology and programming, I find fulfillment in creating software solutions. I enjoy working in teams, approaching challenges as opportunities for growth, and always maintaining an honest and realistic attitude.",
+    "aboutme-info": "Software Engineering graduating in August 2026 with hands-on experience building web applications, REST APIs, internal tools, and client-facing digital products. Comfortable across frontend and backend development with React, TypeScript, Node.js, Python, PHP, and SQL. Looking for a product-focused engineering role with strong mentorship, technical growth, and long-term progression.",
     "references": "References",
     "hobbies": "Hobbies",
     "coding": "Coding",
@@ -12,21 +12,23 @@
     "workExperience": "Work Experience",
     "developer": "Developer",
     "altyraDetails": [
-        "Developed multiple web and mobile applications.",
-        "Developed REST APIs.",
-        "Developed a data collection automation tool."
+        "Built and maintained web and mobile application features across client projects.",
+        "Developed REST APIs to support application workflows and data exchange.",
+        "Created an automation tool to streamline data collection processes."
     ],
     "lisbon": "Lisbon",
     "altyraDates": "Mar 2024 - Feb 2025",
     "ocrDates": "Mar 2021 - Jul 2021",
     "ocrDetails": [
-        "Customized and improved PHC Web ERP",
-        "Improved a logistics application in Kalipso Studio"
+        "Customized ERP workflows and features within the PHC Web platform.",
+        "Improved functionality in an logistics application using Kalipso Studio.",
+        "Worked on bug fixing, feature updates, and application support tasks."
     ],
     "giganticDates": "Mar 2026 - Jun 2026",
     "giganticDetails": [
-        "Developed websites in WordPress and Elementor.",
-        "Collaborated on web projects for reference clients, including Sumol Compal, Sotheby's, Malo Clinic, etc."
+        "Delivered client-facing websites for brands across different industries.",
+        "Built and customized WordPress pages and components using Elementor.",
+        "Contributed to responsive website implementation and content-driven UI updates."
     ],
     "education": "Education",
     "licDates": "Oct 2024 - Present",
