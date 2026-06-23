@@ -15,6 +15,7 @@ import { HttpClient } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MatIconModule } from '@angular/material/icon';
+import { ProjectItemComponent } from './components/project-item/project-item.component';
 
 
 
@@ -24,7 +25,8 @@ import { MatIconModule } from '@angular/material/icon';
     PersonalInfoComponent,
     ProfessionalInfoComponent,
     ExperienceItemComponent,
-    SkillItemComponent
+    SkillItemComponent,
+    ProjectItemComponent
   ],
   imports: [
     BrowserModule,

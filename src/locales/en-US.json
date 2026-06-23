@@ -52,6 +52,12 @@
     "languages": "Languages",
     "portuguese": "Portuguese",
     "english": "English",
-    "spanish": "Spanish"
+    "spanish": "Spanish",
+    "cryptotradingbot": "Crypto Trading Bot",
+    "cryptotradingbotDescription": "Developed a bot for market analysis and automated buy/sell execution based on custom trading logic.",
+    "dynamiccv": "Dynamic CV",
+    "dynamiccvDescription": "Created a dynamic CV web application that allows me to customize my resume with real-time previews and pdf export.",
+    "spotifyplugin": "Spotify Plugin Theme Contribution",
+    "spotifypluginDescription": "Contributed to a theme/plugin customization repository through code changes and a pull request."
 
 }
