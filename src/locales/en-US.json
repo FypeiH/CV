@@ -10,7 +10,10 @@
     "videogames": "Videogames",
     "reading": "Reading",
     "workExperience": "Work Experience",
-    "developer": "Developer",
+    "fullstackdeveloper": "Fullstack Developer",
+    "backenddeveloper": "Backend Developer",
+    "frontenddeveloperintern": "Frontend Developer Intern",
+    "webdeveloperintern": "Web Developer Intern",
     "altyraDetails": [
         "Built and maintained web and mobile application features across client projects.",
         "Developed REST APIs to support application workflows and data exchange.",

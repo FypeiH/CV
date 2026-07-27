@@ -10,7 +10,10 @@
     "videogames": "Videojogos",
     "reading": "Leitura",
     "workExperience": "Experiência de Trabalho",
-    "developer": "Programador",
+    "fullstackdeveloper": "Programador Fullstack",
+    "backenddeveloper": "Programador Backend",
+    "frontenddeveloperintern": "Estágio Curricular - Programador Frontend",
+    "webdeveloperintern": "Estágio Curricular - Programador Web",
     "altyraDetails": [
         "Construí e mantive aplicações web e móveis em projetos de clientes.",
         "Desenvolvi APIs REST para suportar fluxos de trabalho e troca de dados das aplicações.",
