@@ -1,8 +1,9 @@
 {
     "professional-info": "professional-info works!",
     "aboutme": "About me",
-    "aboutme-info": "Software Engineering graduating in August 2026 with hands-on experience building web applications, REST APIs, internal tools, and client-facing digital products. Comfortable across frontend and backend development with React, TypeScript, Node.js, Python, PHP, and SQL. Looking for a product-focused engineering role with strong mentorship, technical growth, and long-term progression.",
+    "aboutme-info": "Bachelor's Degree in Computer Engineering with hands-on experience building web applications, REST APIs, internal tools, and client-facing digital products. Experienced in fullstack development using C#, .NET, Angular, TypeScript, SQL, and Azure, with additional experience in Python, PHP, and modern web technologies. Looking for a software engineering role where I can continue growing through challenging projects, continuous learning, and long-term professional development.",
     "references": "References",
+    "projects": "Projects",
     "hobbies": "Hobbies",
     "coding": "Coding",
     "gym": "Gym",
@@ -34,7 +35,7 @@
         "Contributed to responsive website implementation and content-driven UI updates."
     ],
     "education": "Education",
-    "licDates": "Oct 2024 - Present",
+    "licDates": "Oct 2024 - Aug 2026",
     "licCourse": "Bachelor’s Degree in Computer Engineering",
     "licDetails": [
         "Solid background in software engineering, networking, and web development."

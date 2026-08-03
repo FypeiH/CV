@@ -1,8 +1,9 @@
 {
     "professional-info": "professional-info funciona!",
     "aboutme" : "Sobre mim",
-    "aboutme-info": "Licenciado em Engenharia Informática com conclusão prevista para Agosto de 2026, com experiência prática na construção de aplicações web, APIs REST, ferramentas internas e produtos digitais voltados para o cliente. Confortável tanto no desenvolvimento frontend quanto backend com React, TypeScript, Node.js, Python, PHP e SQL. Procuro um cargo de engenharia focado em produtos com forte mentoria, crescimento técnico e progressão a longo prazo.",
+    "aboutme-info": "Licenciado em Engenharia Informática, com experiência prática no desenvolvimento de aplicações web, APIs REST, ferramentas internas e produtos digitais orientados para o cliente. Experiência profissional em desenvolvimento fullstack com C#, .NET, Angular, TypeScript, SQL, Git e Azure, complementada por conhecimentos em Python, PHP, HTML e CSS. Procuro integrar uma equipa de engenharia de software onde possa contribuir para o desenvolvimento de produtos de qualidade, continuar a evoluir tecnicamente e crescer profissionalmente a longo prazo.",
     "references": "Referências",
+    "projects": "Projetos",
     "hobbies": "Passatempos",
     "coding": "Programação",
     "gym": "Ginásio",
@@ -34,7 +35,7 @@
         "Contribuí para a implementação de websites responsivos e atualizações de UI orientadas por conteúdo."
     ],
     "education": "Formação Académica",
-    "licDates": "Oct 2024 - Presente",
+    "licDates": "Out 2024 - Ago 2026",
     "licCourse": "Licenciatura em Engenharia Informática",
     "licDetails": [
         "Formação sólida em engenharia de software, redes e desenvolvimento web."
