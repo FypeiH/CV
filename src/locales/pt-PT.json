@@ -59,7 +59,7 @@
         "dates": "Mar 2024 – Ago 2024",
         "bullets": [
           "Desenvolvi o frontend e a API REST do sistema de gestão de tours da TakeFreeTours (Angular, .NET).",
-          "Desenvolvi o frontend e a API da Benched, app multiplataforma de futebol em .NET MAUI com UI em Blazor (C#).",
+          "Desenvolvi o frontend e a API da Benched, uma app multiplataforma de futebol em .NET MAUI com UI em Blazor (C#).",
           "Integrei pagamentos PayPal no website de uma sociedade de advogados (Angular, .NET), em produção.",
           "Trabalhei com Tailwind CSS, Angular Material, Syncfusion e Azure DevOps (gestão de projeto e CI/CD)."
         ]
@@ -137,7 +137,7 @@
       {
         "name": "TakeFreeTours – Email Scraper",
         "stack": "C#, .NET, Gmail API, SQL Server",
-        "desc": "Job agendado que lê confirmações de reserva, valida os dados, evita duplicados e grava em SQL Server, reduzindo a introdução manual."
+        "desc": "Tarefa agendada que lê confirmações de reserva, valida os dados, evita duplicados e grava-os em SQL Server, reduzindo a introdução manual."
       },
       {
         "name": "Bot de Trading de Criptomoedas",
@@ -148,7 +148,7 @@
       {
         "name": "CV Dinâmico",
         "stack": "Angular, TypeScript, Tailwind CSS",
-        "desc": "Este CV: app bilingue com exportação para PDF de texto, compatível com ATS.",
+        "desc": "Este CV: aplicação bilingue com exportação para PDF de texto, compatível com ATS.",
         "link": "github.com/FypeiH/CV"
       },
       {

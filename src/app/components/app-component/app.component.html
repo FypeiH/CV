@@ -17,8 +17,8 @@
         <section><p class="title text-xl">{{cv.h.about}}</p><p>{{cv.about}}</p></section>
         <hr />
         <section><p class="title text-xl">{{cv.h.links}}</p>
-          <p>LinkedIn: <span class="underline">{{cv.linkedin}}</span></p>
-          <p>GitHub: <span class="underline">{{cv.github}}</span></p>
+          <p>LinkedIn: <a class="underline" href="https://www.linkedin.com/in/filipe-bravo/">{{cv.linkedin}}</a></p>
+          <p>GitHub: <a class="underline" href="https://github.com/FypeiH">{{cv.github}}</a></p>
         </section>
         <hr />
         <section><p class="title text-xl">{{cv.h.skills}}</p>
@@ -35,7 +35,8 @@
           <div class="flex flex-col gap-1 text-right">
             <span><mat-icon aria-hidden="true" class="align-middle text-sm">location_on</mat-icon> {{cv.location}}</span>
             <span><mat-icon aria-hidden="true" class="align-middle text-sm">call</mat-icon> {{cv.phone}}</span>
-            <span><mat-icon aria-hidden="true" class="align-middle text-sm">mail</mat-icon> {{cv.email}}</span>
+            <span><mat-icon aria-hidden="true" class="align-middle text-sm">mail</mat-icon> <a href="mailto:filipe.abravo@gmail.com">{{cv.email}}</a></span>
+            <span><mat-icon aria-hidden="true" class="align-middle text-sm">link</mat-icon> <a href="https://www.linkedin.com/in/filipe-bravo/">{{cv.linkedin}}</a></span>
           </div>
         </div>
         <ng-container *ngTemplateOutlet="entries; context: {title: cv.h.exp, items: cv.exp}"></ng-container>
@@ -62,8 +63,8 @@
 <article class="print-only ats">
   <h1>{{cv.name}}</h1>
   <p class="subtitle">{{cv.title}}</p>
-  <p class="contact">{{cv.location}} | {{cv.phone}} | {{cv.email}}</p>
-  <p class="contact">LinkedIn: {{cv.linkedin}} | GitHub: {{cv.github}} | {{cv.h.portfolio}}: {{cv.portfolio}}</p>
+  <p class="contact">{{cv.location}} | {{cv.phone}} | <a href="mailto:filipe.abravo@gmail.com">{{cv.email}}</a> | LinkedIn: <a href="https://www.linkedin.com/in/filipe-bravo/">{{cv.linkedin}}</a></p>
+  <p class="contact">GitHub: <a href="https://github.com/FypeiH">{{cv.github}}</a> | {{cv.h.portfolio}}: <a href="https://portfolio-filipebravo.vercel.app">{{cv.portfolio}}</a></p>
   <h2>{{cv.h.about}}</h2>
   <p>{{cv.about}}</p>
   <h2>{{cv.h.exp}}</h2>

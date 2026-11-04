@@ -137,7 +137,7 @@
       {
         "name": "TakeFreeTours – Email Scraper",
         "stack": "C#, .NET, Gmail API, SQL Server",
-        "desc": "Scheduled job that reads booking confirmations, validates and deduplicates data and stores it in SQL Server, cutting manual entry."
+        "desc": "Scheduled job that reads booking confirmations, validates and deduplicates the data, and stores it in SQL Server, cutting manual entry."
       },
       {
         "name": "Crypto Trading Bot",
