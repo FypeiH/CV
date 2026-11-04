@@ -1,29 +1,80 @@
-<div class="flex flex-col items-center gap-4">
-  <!-- Language Switch -->
+<ng-container *ngIf="cv$ | async as cv">
+<div class="screen-only flex flex-col items-center gap-4">
   <label class="flex items-center justify-center gap-3 mt-4">
     <span class="fi fi-pt" [ngClass]="{'invisible' : languageControl.value}"></span>
     <label class="relative inline-flex items-center cursor-pointer">
-      <input type="checkbox" value="" [formControl]="languageControl" class="sr-only peer" 
-        (change)="onLanguageChange()" />
+      <input type="checkbox" [formControl]="languageControl" class="sr-only peer" (change)="onLanguageChange()" aria-label="PT / EN" />
       <div class="w-9 h-5 bg-[#DA291C] hover:bg-red-700 rounded-full peer transition-all ease-in-out duration-500 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-4 after:w-4 after:transition-all peer-checked:bg-[#0A3161] hover:peer-checked:bg-[#071F3D]"></div>
     </label>
     <span class="fi fi-us" [ngClass]="{'invisible' : !languageControl.value}"></span>
   </label>
 
-  <!-- CV -->
-  <div class="paper bg-white shadow-lg border border-gray-200" #cvContainer>
-    <div class="grid grid-cols-12 h-full">
-      <div class="bg-[#3B3B3B] col-span-4 p-4 text-[#F2F2F2]">
-        <app-personal-info></app-personal-info>
-      </div>
-      <div class="bg-[#F2F2F2] col-span-8 p-6 text-[#3B3B3B]">
-        <app-professional-info></app-professional-info>
-      </div>
+  <!-- Screen design: two columns with photo -->
+  <div class="paper bg-white shadow-lg border border-gray-200">
+    <div class="grid grid-cols-12 min-h-[297mm]">
+      <aside class="bg-[#3B3B3B] col-span-4 p-5 text-[#F2F2F2] text-[11px] flex flex-col gap-4">
+        <div class="flex justify-center"><img src="pfp.jpg" alt="Filipe Bravo" class="rounded-full aspect-square object-cover w-2/3" /></div>
+        <section><p class="title text-xl">{{cv.h.about}}</p><p>{{cv.about}}</p></section>
+        <hr />
+        <section><p class="title text-xl">{{cv.h.links}}</p>
+          <p>LinkedIn: <span class="underline">{{cv.linkedin}}</span></p>
+          <p>GitHub: <span class="underline">{{cv.github}}</span></p>
+        </section>
+        <hr />
+        <section><p class="title text-xl">{{cv.h.skills}}</p>
+          <p *ngFor="let s of cv.skills" class="mb-1"><b>{{s.group}}:</b> {{s.items}}</p>
+        </section>
+        <hr />
+        <section><p class="title text-xl">{{cv.h.languages}}</p>
+          <p *ngFor="let l of cv.langs">{{l.name}}: {{l.level}}</p>
+        </section>
+      </aside>
+      <main class="bg-[#F2F2F2] col-span-8 p-6 text-[#3B3B3B] text-[11px]">
+        <div class="flex justify-between gap-4">
+          <div><p class="title text-5xl leading-none">{{cv.name}}</p><p class="title text-[#808080] text-base">{{cv.title}}</p></div>
+          <div class="flex flex-col gap-1 text-right">
+            <span><mat-icon aria-hidden="true" class="align-middle text-sm">location_on</mat-icon> {{cv.location}}</span>
+            <span><mat-icon aria-hidden="true" class="align-middle text-sm">call</mat-icon> {{cv.phone}}</span>
+            <span><mat-icon aria-hidden="true" class="align-middle text-sm">mail</mat-icon> {{cv.email}}</span>
+          </div>
+        </div>
+        <ng-container *ngTemplateOutlet="entries; context: {title: cv.h.exp, items: cv.exp}"></ng-container>
+        <ng-container *ngTemplateOutlet="entries; context: {title: cv.h.edu, items: cv.edu}"></ng-container>
+        <p class="title text-xl pt-3 border-b border-[#3B3B3B]">{{cv.h.projects}}</p>
+        <div class="grid grid-cols-2 gap-x-4 gap-y-2 pt-2">
+          <div *ngFor="let p of cv.projects"><b>{{p.name}}</b> <span class="text-[#808080]"> · {{p.stack}}</span><br />{{p.desc}}<span *ngIf="p.link" class="underline block">{{p.link}}</span></div>
+        </div>
+      </main>
     </div>
   </div>
-
-  <!-- Download Button -->
-  <button class="px-5 py-2 bg-[#3B3B3B] hover:bg-[#696969] text-[#F2F2F2] rounded mb-6" (click)="downloadPDF()">
-    Download CV
-  </button>
+  <button class="px-5 py-2 bg-[#3B3B3B] hover:bg-[#696969] text-[#F2F2F2] rounded mb-6" (click)="downloadPDF()">{{cv.h.download}}</button>
 </div>
+
+<ng-template #entries let-title="title" let-items="items">
+  <p class="title text-xl pt-3 border-b border-[#3B3B3B]">{{title}}</p>
+  <div *ngFor="let e of items" class="pt-2">
+    <p><b>{{e.role}}</b> · {{e.company}}, {{e.location}} <span class="float-right text-[#525252]">{{e.dates}}</span></p>
+    <ul class="list-disc pl-4 text-[#525252]"><li *ngFor="let b of e.bullets">{{b}}</li></ul>
+  </div>
+</ng-template>
+
+<!-- Print / PDF: single column, ATS reading order, no icons, no photo -->
+<article class="print-only ats">
+  <h1>{{cv.name}}</h1>
+  <p class="subtitle">{{cv.title}}</p>
+  <p class="contact">{{cv.location}} | {{cv.phone}} | {{cv.email}}</p>
+  <p class="contact">LinkedIn: {{cv.linkedin}} | GitHub: {{cv.github}} | {{cv.h.portfolio}}: {{cv.portfolio}}</p>
+  <h2>{{cv.h.about}}</h2>
+  <p>{{cv.about}}</p>
+  <h2>{{cv.h.exp}}</h2>
+  <section *ngFor="let e of cv.exp"><h3>{{e.role}}, {{e.company}}, {{e.location}} | {{e.dates}}</h3><ul><li *ngFor="let b of e.bullets">{{b}}</li></ul></section>
+  <h2>{{cv.h.edu}}</h2>
+  <section *ngFor="let e of cv.edu"><h3>{{e.role}}, {{e.company}}, {{e.location}} | {{e.dates}}</h3><p>{{e.bullets[0]}}</p></section>
+  <h2>{{cv.h.skills}}</h2>
+  <p *ngFor="let s of cv.skills"><b>{{s.group}}:</b> {{s.items}}</p>
+  <h2>{{cv.h.projects}}</h2>
+  <ul><li *ngFor="let p of cv.projects"><b>{{p.name}}</b> ({{p.stack}}): {{p.desc}}<ng-container *ngIf="p.link"> {{p.link}}</ng-container></li></ul>
+  <h2>{{cv.h.languages}}</h2>
+  <p><ng-container *ngFor="let l of cv.langs; let last = last">{{l.name}}: {{l.level}}{{last ? '' : ' | '}}</ng-container></p>
+</article>
+</ng-container>

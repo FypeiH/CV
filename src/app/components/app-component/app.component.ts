@@ -1,8 +1,6 @@
-import { Component, ViewChild, ElementRef } from '@angular/core';
+import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { FormControl } from '@angular/forms';
-import jsPDF from 'jspdf';
-import * as htmlToImage from 'html-to-image';
 
 @Component({
   selector: 'app-root',
@@ -10,42 +8,29 @@ import * as htmlToImage from 'html-to-image';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  @ViewChild('cvContainer') cvContainer!: ElementRef;
-  languageControl: FormControl = new FormControl(false);
-  
+  readonly cv$;
+  readonly languageControl: FormControl<boolean>;
+
   constructor(private translate: TranslateService) {
-    const userLang = navigator.language || 'pt-PT';
-    this.translate.setDefaultLang(userLang);
-  }
-
-  async downloadPDF() {
-    const DATA = this.cvContainer.nativeElement;
-
-    try {
-      const dataUrl = await htmlToImage.toPng(DATA, { 
-        quality: 1,
-        backgroundColor: '#ffffff',
-        pixelRatio: 3
-      });
-
-
-      const pdf = new jsPDF('p', 'mm', 'a4');
-      const imgProps = pdf.getImageProperties(dataUrl);
-      const pdfWidth = 210; // A4 em mm
-      const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
-
-
-      pdf.addImage(dataUrl, 'PNG', 0, 0, pdfWidth, pdfHeight);
-      pdf.save('CV.pdf');
-    } catch (error) {
-      console.error('Erro ao gerar o PDF:', error);
-    }
+    const startInEnglish = (navigator.language || '').toLowerCase().startsWith('en');
+    this.languageControl = new FormControl(startInEnglish, { nonNullable: true });
+    this.translate.setDefaultLang('pt-PT');
+    this.translate.use(startInEnglish ? 'en-US' : 'pt-PT');
+    document.documentElement.lang = startInEnglish ? 'en' : 'pt-PT';
+    this.cv$ = this.translate.stream('cv');
   }
 
   onLanguageChange() {
-    const selectedLanguage = this.languageControl.value ? 'en-US' : 'pt-PT';
-    this.translate.use(selectedLanguage);
+    const lang = this.languageControl.value ? 'en-US' : 'pt-PT';
+    this.translate.use(lang);
+    document.documentElement.lang = this.languageControl.value ? 'en' : 'pt-PT';
   }
 
-  title = 'CV';
+  /** Browser print keeps real text in DOM order, which ATS parsers can read. */
+  downloadPDF() {
+    const previousTitle = document.title;
+    document.title = 'Filipe_Bravo_CV';
+    window.addEventListener('afterprint', () => (document.title = previousTitle), { once: true });
+    window.print();
+  }
 }

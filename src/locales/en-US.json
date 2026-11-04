@@ -1,67 +1,166 @@
 {
-    "professional-info": "professional-info works!",
-    "aboutme": "About me",
-    "aboutme-info": "Bachelor's Degree in Computer Engineering with hands-on experience building web applications, REST APIs, internal tools, and client-facing digital products. Experienced in fullstack development using C#, .NET, Angular, TypeScript, SQL, and Azure, with additional experience in Python, PHP, and modern web technologies. Looking for a software engineering role where I can continue growing through challenging projects, continuous learning, and long-term professional development.",
-    "references": "References",
-    "projects": "Projects",
-    "hobbies": "Hobbies",
-    "coding": "Coding",
-    "gym": "Gym",
-    "football": "Football",
-    "videogames": "Videogames",
-    "reading": "Reading",
-    "workExperience": "Work Experience",
-    "fullstackdeveloper": "Fullstack Developer",
-    "backenddeveloper": "Backend Developer",
-    "frontenddeveloperintern": "Frontend Developer Intern",
-    "webdeveloperintern": "Web Developer Intern",
-    "altyraDetails": [
-        "Built and maintained web and mobile application features across client projects.",
-        "Developed REST APIs to support application workflows and data exchange.",
-        "Created an automation tool to streamline data collection processes."
+  "cv": {
+    "name": "Filipe Bravo",
+    "title": "Software Engineer",
+    "location": "Alverca do Ribatejo, Lisboa – 2615-163",
+    "phone": "+351 918 949 023",
+    "email": "filipe.abravo@gmail.com",
+    "linkedin": "linkedin.com/in/filipe-bravo",
+    "github": "github.com/FypeiH",
+    "portfolio": "github.com/FypeiH/portfolio-site",
+    "h": {
+      "about": "Professional Summary",
+      "exp": "Professional Experience",
+      "edu": "Education",
+      "skills": "Technical Skills",
+      "projects": "Projects",
+      "languages": "Languages",
+      "links": "Links",
+      "contact": "Contact",
+      "download": "Download CV (PDF)",
+      "portfolio": "Portfolio"
+    },
+    "about": "Computer Engineering graduate with experience building web and mobile applications, REST APIs and internal tools. I work mainly with C#, .NET, ASP.NET Core, Angular, TypeScript and SQL Server, across the full stack from frontend to API and database. Looking for a software engineering team where I can contribute to quality products and keep growing technically.",
+    "exp": [
+      {
+        "role": "Web Developer Intern",
+        "company": "Gigantic Digital Growth",
+        "location": "Lisbon",
+        "dates": "Mar 2026 – Jun 2026",
+        "bullets": [
+          "Delivered client websites for brands across different industries in WordPress, building custom pages and components with Elementor.",
+          "Implemented responsive layouts and content-driven UI updates."
+        ]
+      },
+      {
+        "role": "Fullstack Developer",
+        "company": "Altyra Solutions",
+        "location": "Lisbon",
+        "dates": "Sep 2024 – Feb 2025",
+        "bullets": [
+          "Completed TakeFreeTours' scheduled email scraper (C#, Gmail API, SQL Server), turning booking confirmations from several platforms into validated, deduplicated visitor records.",
+          "Built web and mobile features and REST APIs for client projects, on flexible hours alongside my degree."
+        ]
+      },
+      {
+        "role": "Fullstack Developer Intern",
+        "company": "Altyra Solutions",
+        "location": "Lisbon",
+        "dates": "Mar 2024 – Aug 2024",
+        "bullets": [
+          "Built the frontend and REST API for TakeFreeTours' tour management system (Angular, .NET).",
+          "Built the frontend and API for Benched, a multi-platform football app in .NET MAUI with a Blazor UI (C#).",
+          "Integrated PayPal payments into a law firm's website (Angular, .NET), now in production.",
+          "Worked with Tailwind CSS, Angular Material, Syncfusion and Azure DevOps (project management, CI/CD)."
+        ]
+      },
+      {
+        "role": "Frontend Developer Intern",
+        "company": "OCR – Technology and Productivity",
+        "location": "Lisbon",
+        "dates": "Mar 2021 – Jul 2021",
+        "bullets": [
+          "Customized ERP workflows and features in PHC Web and improved a logistics app built with Kalipso Studio.",
+          "Fixed bugs, shipped feature updates and provided application support."
+        ]
+      }
     ],
-    "lisbon": "Lisbon",
-    "altyraDates": "Mar 2024 - Feb 2025",
-    "ocrDates": "Mar 2021 - Jul 2021",
-    "ocrDetails": [
-        "Customized ERP workflows and features within the PHC Web platform.",
-        "Improved functionality in an logistics application using Kalipso Studio.",
-        "Worked on bug fixing, feature updates, and application support tasks."
+    "edu": [
+      {
+        "role": "Bachelor's Degree in Computer Engineering",
+        "company": "ISTEC",
+        "location": "Lisbon",
+        "dates": "Oct 2024 – Aug 2026",
+        "bullets": [
+          "Software engineering, networking and web development."
+        ]
+      },
+      {
+        "role": "Higher Technical Diploma (CTeSP) in Mobile App Development",
+        "company": "ISTEC",
+        "location": "Lisbon",
+        "dates": "Sep 2022 – Aug 2024",
+        "bullets": [
+          "Java, React Native and app design."
+        ]
+      },
+      {
+        "role": "Vocational Diploma in IT Systems Management and Programming",
+        "company": "ESGC",
+        "location": "Lisbon",
+        "dates": "Sep 2018 – Jul 2021",
+        "bullets": [
+          "Merit award; final project graded 20/20."
+        ]
+      }
     ],
-    "giganticDates": "Mar 2026 - Jun 2026",
-    "giganticDetails": [
-        "Delivered client-facing websites for brands across different industries.",
-        "Built and customized WordPress pages and components using Elementor.",
-        "Contributed to responsive website implementation and content-driven UI updates."
+    "skills": [
+      {
+        "group": "Backend",
+        "items": "C#, .NET, ASP.NET Core, Razor Pages, REST APIs, Gmail API, Node.js, Python"
+      },
+      {
+        "group": "Frontend",
+        "items": "Angular, TypeScript, Blazor, .NET MAUI, React, Next.js, Tailwind CSS, Angular Material, Syncfusion, HTML5, CSS3"
+      },
+      {
+        "group": "Data",
+        "items": "SQL, SQL Server"
+      },
+      {
+        "group": "DevOps/Tools",
+        "items": "Git, Azure DevOps, WordPress, Elementor, PHC Web"
+      }
     ],
-    "education": "Education",
-    "licDates": "Oct 2024 - Aug 2026",
-    "licCourse": "Bachelor’s Degree in Computer Engineering",
-    "licDetails": [
-        "Solid background in software engineering, networking, and web development."
+    "projects": [
+      {
+        "name": "Benched",
+        "stack": ".NET MAUI, Blazor, C#",
+        "desc": "Football app to find players, teams and coaches, with competitions. Frontend and API.",
+        "link": "apps.apple.com/pt/app/benched/id6744754854"
+      },
+      {
+        "name": "TakeFreeTours – Tour Management",
+        "stack": "Angular, TypeScript, .NET, C#",
+        "desc": "Manages tours and guide teams with availability checks. Frontend and REST API."
+      },
+      {
+        "name": "TakeFreeTours – Email Scraper",
+        "stack": "C#, .NET, Gmail API, SQL Server",
+        "desc": "Scheduled job that reads booking confirmations, validates and deduplicates data and stores it in SQL Server, cutting manual entry."
+      },
+      {
+        "name": "Crypto Trading Bot",
+        "stack": "Python, CCXT, TA-Lib",
+        "desc": "Market analysis and automated order execution with custom trading logic.",
+        "link": "github.com/FypeiH/fidu-bot"
+      },
+      {
+        "name": "Dynamic CV",
+        "stack": "Angular, TypeScript, Tailwind CSS",
+        "desc": "This CV: bilingual app with ATS-friendly, text-based PDF export.",
+        "link": "github.com/FypeiH/CV"
+      },
+      {
+        "name": "Portfolio",
+        "stack": "Next.js, TypeScript, Vercel",
+        "desc": "Portfolio site with project case studies.",
+        "link": "github.com/FypeiH/portfolio-site"
+      }
     ],
-    "istecDates": "Sep 2022 - Aug 2024",
-    "ddm": "Higher Technical Degree in Mobile App Development",
-    "istecDetails": [
-        "Java, React Native, and application design concepts."
-    ],
-    "esgcDates": "Sep 2018 - Jul 2021",
-    "esgcCourse": "IT Systems Management & Programming",
-    
-    "esgcDetails": [
-        "Received a Merit Award",
-        "Final project awarded full marks"
-    ],
-    "skills": "Skills",
-    "languages": "Languages",
-    "portuguese": "Portuguese",
-    "english": "English",
-    "spanish": "Spanish",
-    "cryptotradingbot": "Crypto Trading Bot",
-    "cryptotradingbotDescription": "Developed a bot for market analysis and automated buy/sell execution based on custom trading logic.",
-    "dynamiccv": "Dynamic CV",
-    "dynamiccvDescription": "Created a dynamic CV web application that allows me to customize my resume with real-time previews and pdf export.",
-    "spotifyplugin": "Spotify Plugin Theme Contribution",
-    "spotifypluginDescription": "Contributed to a theme/plugin customization repository through code changes and a pull request."
-
+    "langs": [
+      {
+        "name": "Portuguese",
+        "level": "Native"
+      },
+      {
+        "name": "English",
+        "level": "Advanced"
+      },
+      {
+        "name": "Spanish",
+        "level": "Basic"
+      }
+    ]
+  }
 }

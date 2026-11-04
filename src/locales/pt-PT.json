@@ -1,65 +1,166 @@
 {
-    "professional-info": "professional-info funciona!",
-    "aboutme" : "Sobre mim",
-    "aboutme-info": "Licenciado em Engenharia Informática, com experiência prática no desenvolvimento de aplicações web, APIs REST, ferramentas internas e produtos digitais orientados para o cliente. Experiência profissional em desenvolvimento fullstack com C#, .NET, Angular, TypeScript, SQL, Git e Azure, complementada por conhecimentos em Python, PHP, HTML e CSS. Procuro integrar uma equipa de engenharia de software onde possa contribuir para o desenvolvimento de produtos de qualidade, continuar a evoluir tecnicamente e crescer profissionalmente a longo prazo.",
-    "references": "Referências",
-    "projects": "Projetos",
-    "hobbies": "Passatempos",
-    "coding": "Programação",
-    "gym": "Ginásio",
-    "football": "Futebol",
-    "videogames": "Videojogos",
-    "reading": "Leitura",
-    "workExperience": "Experiência de Trabalho",
-    "fullstackdeveloper": "Programador Fullstack",
-    "backenddeveloper": "Programador Backend",
-    "frontenddeveloperintern": "Estágio Curricular - Programador Frontend",
-    "webdeveloperintern": "Estágio Curricular - Programador Web",
-    "altyraDetails": [
-        "Construí e mantive aplicações web e móveis em projetos de clientes.",
-        "Desenvolvi APIs REST para suportar fluxos de trabalho e troca de dados das aplicações.",
-        "Criei uma ferramenta de automação para agilizar os processos de recolha de dados."
+  "cv": {
+    "name": "Filipe Bravo",
+    "title": "Software Engineer",
+    "location": "Alverca do Ribatejo, Lisboa – 2615-163",
+    "phone": "+351 918 949 023",
+    "email": "filipe.abravo@gmail.com",
+    "linkedin": "linkedin.com/in/filipe-bravo",
+    "github": "github.com/FypeiH",
+    "portfolio": "github.com/FypeiH/portfolio-site",
+    "h": {
+      "about": "Resumo Profissional",
+      "exp": "Experiência Profissional",
+      "edu": "Formação Académica",
+      "skills": "Competências Técnicas",
+      "projects": "Projetos",
+      "languages": "Idiomas",
+      "links": "Links",
+      "contact": "Contactos",
+      "download": "Descarregar CV (PDF)",
+      "portfolio": "Portfólio"
+    },
+    "about": "Licenciado em Engenharia Informática, com experiência no desenvolvimento de aplicações web e móveis, APIs REST e ferramentas internas. Trabalho sobretudo com C#, .NET, ASP.NET Core, Angular, TypeScript e SQL Server, em todo o ciclo, do frontend à API e à base de dados. Procuro uma equipa de engenharia de software onde possa contribuir para produtos de qualidade e continuar a evoluir tecnicamente.",
+    "exp": [
+      {
+        "role": "Estagiário Programador Web",
+        "company": "Gigantic Digital Growth",
+        "location": "Lisboa",
+        "dates": "Mar 2026 – Jun 2026",
+        "bullets": [
+          "Desenvolvi websites para clientes de diferentes setores em WordPress, construindo páginas e componentes à medida com Elementor.",
+          "Implementei layouts responsivos e atualizações de UI orientadas por conteúdo."
+        ]
+      },
+      {
+        "role": "Programador Fullstack",
+        "company": "Altyra Solutions",
+        "location": "Lisboa",
+        "dates": "Set 2024 – Fev 2025",
+        "bullets": [
+          "Concluí o email scraper agendado da TakeFreeTours (C#, Gmail API, SQL Server), que converte confirmações de reserva de várias plataformas em registos de visitantes validados e sem duplicados.",
+          "Desenvolvi funcionalidades web e móveis e APIs REST para projetos de clientes, em horário flexível em paralelo com a licenciatura."
+        ]
+      },
+      {
+        "role": "Estagiário Programador Fullstack",
+        "company": "Altyra Solutions",
+        "location": "Lisboa",
+        "dates": "Mar 2024 – Ago 2024",
+        "bullets": [
+          "Desenvolvi o frontend e a API REST do sistema de gestão de tours da TakeFreeTours (Angular, .NET).",
+          "Desenvolvi o frontend e a API da Benched, app multiplataforma de futebol em .NET MAUI com UI em Blazor (C#).",
+          "Integrei pagamentos PayPal no website de uma sociedade de advogados (Angular, .NET), em produção.",
+          "Trabalhei com Tailwind CSS, Angular Material, Syncfusion e Azure DevOps (gestão de projeto e CI/CD)."
+        ]
+      },
+      {
+        "role": "Estagiário Programador Frontend",
+        "company": "OCR – Technology and Productivity",
+        "location": "Lisboa",
+        "dates": "Mar 2021 – Jul 2021",
+        "bullets": [
+          "Personalizei fluxos de trabalho e funcionalidades do ERP PHC Web e melhorei uma aplicação de logística em Kalipso Studio.",
+          "Corrigi bugs, entreguei atualizações de funcionalidades e prestei suporte aplicacional."
+        ]
+      }
     ],
-    "lisbon": "Lisboa",
-    "altyraDates": "Mar 2024 - Fev 2025",
-    "ocrDates": "Mar 2021 - Jul 2021",
-    "ocrDetails": [
-        "Personalizei fluxos de trabalho e funcionalidades do ERP na plataforma PHC Web.",
-        "Melhorei a funcionalidade numa aplicação logística usando o Kalipso Studio.",
-        "Trabalhei na correção de bugs, atualizações de funcionalidades e tarefas de suporte de aplicações."
+    "edu": [
+      {
+        "role": "Licenciatura em Engenharia Informática",
+        "company": "ISTEC",
+        "location": "Lisboa",
+        "dates": "Out 2024 – Ago 2026",
+        "bullets": [
+          "Engenharia de software, redes e desenvolvimento web."
+        ]
+      },
+      {
+        "role": "CTeSP em Desenvolvimento de Aplicações Móveis",
+        "company": "ISTEC",
+        "location": "Lisboa",
+        "dates": "Set 2022 – Ago 2024",
+        "bullets": [
+          "Java, React Native e design de aplicações."
+        ]
+      },
+      {
+        "role": "Curso Profissional de Técnico de Gestão e Programação de Sistemas Informáticos",
+        "company": "ESGC",
+        "location": "Lisboa",
+        "dates": "Set 2018 – Jul 2021",
+        "bullets": [
+          "Menção de Mérito; projeto final avaliado com 20 valores."
+        ]
+      }
     ],
-    "giganticDates": "Mar 2026 - Jun 2026",
-    "giganticDetails": [
-        "Entreguei websites voltados para o cliente para marcas de diferentes indústrias.",
-        "Construí e personalizei páginas e componentes WordPress usando Elementor.",
-        "Contribuí para a implementação de websites responsivos e atualizações de UI orientadas por conteúdo."
+    "skills": [
+      {
+        "group": "Backend",
+        "items": "C#, .NET, ASP.NET Core, Razor Pages, REST APIs, Gmail API, Node.js, Python"
+      },
+      {
+        "group": "Frontend",
+        "items": "Angular, TypeScript, Blazor, .NET MAUI, React, Next.js, Tailwind CSS, Angular Material, Syncfusion, HTML5, CSS3"
+      },
+      {
+        "group": "Dados",
+        "items": "SQL, SQL Server"
+      },
+      {
+        "group": "DevOps/Ferramentas",
+        "items": "Git, Azure DevOps, WordPress, Elementor, PHC Web"
+      }
     ],
-    "education": "Formação Académica",
-    "licDates": "Out 2024 - Ago 2026",
-    "licCourse": "Licenciatura em Engenharia Informática",
-    "licDetails": [
-        "Formação sólida em engenharia de software, redes e desenvolvimento web."
+    "projects": [
+      {
+        "name": "Benched",
+        "stack": ".NET MAUI, Blazor, C#",
+        "desc": "App de futebol para encontrar jogadores, equipas e treinadores, com competições. Frontend e API.",
+        "link": "apps.apple.com/pt/app/benched/id6744754854"
+      },
+      {
+        "name": "TakeFreeTours – Gestão de Tours",
+        "stack": "Angular, TypeScript, .NET, C#",
+        "desc": "Gestão de tours e das equipas de guias, com verificação de disponibilidade. Frontend e API REST."
+      },
+      {
+        "name": "TakeFreeTours – Email Scraper",
+        "stack": "C#, .NET, Gmail API, SQL Server",
+        "desc": "Job agendado que lê confirmações de reserva, valida os dados, evita duplicados e grava em SQL Server, reduzindo a introdução manual."
+      },
+      {
+        "name": "Bot de Trading de Criptomoedas",
+        "stack": "Python, CCXT, TA-Lib",
+        "desc": "Análise de mercado e execução automática de ordens com lógica de trading própria.",
+        "link": "github.com/FypeiH/fidu-bot"
+      },
+      {
+        "name": "CV Dinâmico",
+        "stack": "Angular, TypeScript, Tailwind CSS",
+        "desc": "Este CV: app bilingue com exportação para PDF de texto, compatível com ATS.",
+        "link": "github.com/FypeiH/CV"
+      },
+      {
+        "name": "Portfólio",
+        "stack": "Next.js, TypeScript, Vercel",
+        "desc": "Site de portfólio com estudos de caso dos projetos.",
+        "link": "github.com/FypeiH/portfolio-site"
+      }
     ],
-    "istecDates": "Set 2022 - Ago 2024",
-    "ddm": "Técnico Superior em Desenvolvimento de Apps Móveis",
-    "istecDetails": [
-        "Java, React Native e conceitos de design de aplicações."
-    ],
-    "esgcDates": "Set 2018 - Jul 2021",
-    "esgcCourse": "Técnico de Gestão e Programação de Sistemas Informáticos",
-    "esgcDetails": [
-        "Recebi Menção de Mérito",
-        "Projeto final avaliado com 20 valores"
-    ],
-    "skills": "Competências",
-    "languages": "Idiomas",
-    "portuguese": "Português",
-    "english": "Inglês",
-    "spanish": "Espanhol",
-    "cryptotradingbot": "Bot de Trading de Criptomoedas",
-    "cryptotradingbotDescription": "Desenvolvi um bot para análise de mercado e execução automatizada de compras/vendas com base em lógica de trading personalizada.",
-    "dynamiccv": "CV Dinâmico",
-    "dynamiccvDescription": "Criei uma aplicação web de CV dinâmico que me permite personalizar o meu currículo com pré-visualizações em tempo real e exportação para PDF.",
-    "spotifyplugin": "Contribuição para Tema/Plugin do Spotify",
-    "spotifypluginDescription": "Contribuí para um repositório de personalização de tema/plugin através de alterações de código e um pull request."
+    "langs": [
+      {
+        "name": "Português",
+        "level": "Nativo"
+      },
+      {
+        "name": "Inglês",
+        "level": "Avançado"
+      },
+      {
+        "name": "Espanhol",
+        "level": "Básico"
+      }
+    ]
+  }
 }
