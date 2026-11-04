@@ -7,7 +7,7 @@
     "email": "filipe.abravo@gmail.com",
     "linkedin": "linkedin.com/in/filipe-bravo",
     "github": "github.com/FypeiH",
-    "portfolio": "github.com/FypeiH/portfolio-site",
+    "portfolio": "portfolio-filipebravo.vercel.app",
     "h": {
       "about": "Resumo Profissional",
       "exp": "Experiência Profissional",
@@ -155,7 +155,7 @@
         "name": "Portfólio",
         "stack": "Next.js, TypeScript, Vercel",
         "desc": "Site de portfólio com estudos de caso dos projetos.",
-        "link": "github.com/FypeiH/portfolio-site"
+        "link": "portfolio-filipebravo.vercel.app"
       }
     ],
     "langs": [
