@@ -23,6 +23,16 @@
     "about": "Licenciado em Engenharia Informática, com experiência no desenvolvimento de aplicações web e móveis, APIs REST e ferramentas internas. Trabalho sobretudo com C#, .NET, ASP.NET Core, Angular, TypeScript e SQL Server, em todo o ciclo, do frontend à API e à base de dados. Procuro uma equipa de engenharia de software onde possa contribuir para produtos de qualidade e continuar a evoluir tecnicamente.",
     "exp": [
       {
+        "role": "Full Stack Developer (Freelance)",
+        "company": "Cliente confidencial",
+        "location": "Remoto",
+        "dates": "Set 2026 – Out 2026",
+        "bullets": [
+          "Desenvolvi uma ferramenta interna de relatórios de leads e propostas em ASP.NET Core Razor Pages e SQL Server, com filtros e exportação para Excel.",
+          "Implementei a identificação de leads por email ou domínio, com integração de LLMs para completar dados da empresa."
+        ]
+      },
+      {
         "role": "Estagiário Programador Web",
         "company": "Gigantic Digital Growth",
         "location": "Lisboa",
@@ -33,7 +43,7 @@
         ]
       },
       {
-        "role": "Programador Fullstack",
+        "role": "Full Stack Developer",
         "company": "Altyra Solutions",
         "location": "Lisboa",
         "dates": "Set 2024 – Fev 2025",
@@ -43,7 +53,7 @@
         ]
       },
       {
-        "role": "Estagiário Programador Fullstack",
+        "role": "Full Stack Developer (Estágio)",
         "company": "Altyra Solutions",
         "location": "Lisboa",
         "dates": "Mar 2024 – Ago 2024",
@@ -67,7 +77,7 @@
     ],
     "edu": [
       {
-        "role": "Licenciatura em Engenharia Informática",
+        "role": "Licenciatura em Engenharia Informática (concluída, média 14 valores)",
         "company": "ISTEC",
         "location": "Lisboa",
         "dates": "Out 2024 – Ago 2026",
@@ -155,7 +165,7 @@
       },
       {
         "name": "Inglês",
-        "level": "Avançado"
+        "level": "C1"
       },
       {
         "name": "Espanhol",
